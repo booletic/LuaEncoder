@@ -47,7 +47,7 @@
 	nil)))
 
 (defun lines (str n)
-  "a closure, break down a string to n-line(s)"
+  "break down a string to n-line(s)"
   (let ((acc nil))
   (loop for i from  0 to (/ (length str) n)
 	do (push (yieldtoken str n) acc))
